@@ -35,15 +35,6 @@ public class CLAMITest {
 	}
 	
 	@Test
-	public void testCLAMIWithPP1_DPProject() {
-		
-		String[] args = {"-f","data/PP1-DP.arff","-l","isDefective","-p", "buggy", "-m"};
-		
-		
-		CLAMI.main(args);
-	}
-	
-	@Test
 	public void testCLAMIWithApacheProjectByRandomForest() {
 		
 		String[] args = {"-a", "weka.classifiers.trees.RandomForest",
@@ -65,13 +56,12 @@ public class CLAMITest {
 	
 	@Test
 	public void testCLAMIWithYourSelectedProject() {
-		
 		// TASK3: Conduct defect prediction by using CLAMI models
 		// complete this test case for the generated arff files from Task 2
 		
-		//String[] args = {"-f","data/[your_generated_metric_data].arff","-l","label","-p", "buggy", "-m"};
+		String[] args = {"-f","data/PP1_DP_testForTask2_1.arff","-l","label","-p", "buggy", "-m"};
 		
-		//CLAMI.main(args);
+		CLAMI.main(args);
 	}
 	
 	@Test
