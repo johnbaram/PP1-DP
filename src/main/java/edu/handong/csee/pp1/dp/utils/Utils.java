@@ -21,6 +21,7 @@ public class Utils {
 		
 		if(!directory.exists()) {
 			System.err.println("Path is not existing. Check your git path!");
+			System.exit(0);
 		}
 		
 		if(!directory.isDirectory()) {

@@ -35,6 +35,15 @@ public class CLAMITest {
 	}
 	
 	@Test
+	public void testCLAMIWithPP1_DPProject() {
+		
+		String[] args = {"-f","data/PP1-DP.arff","-l","isDefective","-p", "buggy", "-m"};
+		
+		
+		CLAMI.main(args);
+	}
+	
+	@Test
 	public void testCLAMIWithApacheProjectByRandomForest() {
 		
 		String[] args = {"-a", "weka.classifiers.trees.RandomForest",
