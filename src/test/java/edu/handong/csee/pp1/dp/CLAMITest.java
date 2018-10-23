@@ -80,8 +80,7 @@ public class CLAMITest {
 	public void testCLAMIWithApacheProjectToFindBestCutoffForFmeasure() {
 		
 		// TASK5 TODO Use this method to find the best cutoff for f-measure
-		
-		String bestCutoff = "50";
+		String bestCutoff = "42";
 		
 		String[] args = {"-f","data/Apache.arff","-l","isDefective","-p", "TRUE", "-m", "-c", bestCutoff};
 
